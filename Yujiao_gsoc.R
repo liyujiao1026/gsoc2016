@@ -53,10 +53,10 @@ dbSendQuery(con, "COMMENT ON SCHEMA yujiao IS 'Test result by YujiaoLi';")
 #--- (3.1) Method 1: Use function "rgdal::writeOGR" to export (Work bad)-------------------|
 
 # -----------------------------------------------------------------------------------------|
-# *Pro: convenient and fairly straightforward syntax. 							    	                 |
-#											                                                                     |
+# *Pro: convenient and fairly straightforward syntax. 							    	                         |
+#											                                                                               |
 # *Con: It can only support several drivers. ( ogrDrivers() to check available drivers)    |
-#       														                                                       |
+#       														                                                                     |
 #       Sometimes,Windows-OS cannot work well.                                             |
 #       It depends on the individual user's installation of GDAL/OGR.                      |
 #       "Rgdal" package installed from the CRAN repos includes its own basic gdal,         |
