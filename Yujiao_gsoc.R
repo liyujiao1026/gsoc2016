@@ -90,14 +90,14 @@ file.show(system.file("README.windows", package = "rgdal"))
 #---  (3.2) Method 2: Convert spatial object to WKT string, and then export into PostGIS -----------------#
 
 # --------------------------------------------------------------------------------------------------------|
-#  *Pro: Can be generalized to other geometry object, not only limited in spatial-point data	    	      |
-#	   WKT format is rather readable by human than WKB								    				                          |
+#  *Pro: Can be generalized to other geometry object, not only limited in spatial-point data	    	        |
+#	   WKT format is rather readable by human than WKB								    				                                      |
 #	   Exported data type(non-sp part) is kept consistent with raw data.No need to set datatype again       |
 #            e.g. Variable "Time" can be recognized and saved as "timestamp with time zone" automatically |
 #        When Converted from WKT to geometry, SRID can be either set well or not. No need to check and set|
 #        Circular Strings and Curves are also supported	                                                  |
 #        "EWKT" can be extended further to allow 3 dimensional data                                       |
-#							                                                                                            |
+#							                                                                                                  |
 #  *Con: "WKT" is not as faster as "WKB" to process data                                                  |
 #        Not well-wrapped function in the package, this can be done later.                                |
 #  *Note: row.names column was automatically generated.It might be useful for setting primary key. 	      |
