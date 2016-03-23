@@ -128,7 +128,7 @@ dbSendQuery(con,query)
 #---  (3.3) Method 3: Convert spatial object to WKB string,  and then export into PostGIS  ---------------#
 
 # --------------------------------------------------------------------------------------------------------|
-#  *Pro: faster than WKT when data is large, but I need make experiments more times to test               |														|
+#  *Pro: faster than WKT when data is large, but I need make experiments more times to test               |									#  				                                                                                               	|
 #  *my thought: Compared with WKT, WKB is the binary format, I did not see too much difference in SQL     |
 #---------------------------------------------------------------------------------------------------------|
 
@@ -190,7 +190,7 @@ dbListTables(con)
 # (3.4.2) use rpostgis::pgMakePts
 
 #----------------------------------------------------------------------------------------------------------#
-# NOTE: There is one error in pgMakePts() function Document								                   #
+# NOTE: There is one error in pgMakePts() function Document								                                 #
 # which one is right for argument of x and y?    VALUE of coordinates   v.s.  NAME of coordinates(document)#
 # Official document said it should be NAME, but my test result is VALUE works well. See my following test  #
 #----------------------------------------------------------------------------------------------------------#
